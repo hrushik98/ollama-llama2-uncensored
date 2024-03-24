@@ -23,7 +23,7 @@ def main():
         try:
             response = send_api_request(api_url, payload)
             st.subheader("Response")
-            st.json(response['response'])
+            st.write(response['response'])
         except Exception as e:
             st.error(f"Error: {e}")
 
